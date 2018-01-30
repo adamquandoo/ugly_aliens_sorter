@@ -1,0 +1,26 @@
+Open Points:
+1. will the input file always be grouped by planets ?
+   or the records might get shuffled as well ?
+   
+   I assumed that records might get shuffled. and I sorted the file before doing the transformation.
+   So the result will not be same as given (given output file). My output file will be ordered by planets.
+   
+2. Tranformation logic
+   Given transformation logic is not common for the 3 given planets.
+   And if any new planets and aliens are coming new, what would be the trasformation logic ?
+   
+   It is quite difficult to write a dynamic code (only one function), for all the planets and aliens
+   with different transformation logic.
+   
+   So, I assumed that thr transformation logic is same for all the planets.
+   provided same transformation logic for all the records in the file.
+   
+   We should have a seperate function() for every transformation logic.
+   And, then maintain a dictionary with mapping of (planets) <=> (transformation logic)
+   
+   We have to do some manual works in this case:
+   (1) for every new transformation log, we need to add a code
+   (2) for every new planets, we need to make an entry into the dictionary, 
+        which transformation logic to be used for thie new planet.
+        
+        also need to mention a default transformation logic for planets.
